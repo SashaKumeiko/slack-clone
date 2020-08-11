@@ -6,6 +6,7 @@ import {useStateValue} from '../StateProvider';
 import {SET_USER} from '../reducer';
 
 export const Login = () => {
+  // eslint-disable-next-line no-unused-vars
   const [state, dispatch] = useStateValue();
 console.log(SET_USER)
   const signIn = () => {
