@@ -1,24 +1,57 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './Chat.css';
 import {useParams} from 'react-router-dom';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import InfoIcon from '@material-ui/icons/Info';
+import db from '../firebase';
+import {Message} from './Message';
 
 export const Chat = () => {
-  const roomId = useParams();
+  let {roomId} = useParams();
+  roomId = roomId.substring(1);
+  const [roomDetails, setRoomDetails] = useState(null);
+  const [roomMessages, setRoomMessages] = useState([]);
+
+  useEffect(() => {
+    if (roomId) {
+      db.collection('rooms')
+        .doc(roomId)
+        .onSnapshot((snapshot) => {
+          console.log(snapshot.data());
+          setRoomDetails(snapshot.data());
+        });
+      db.collection('rooms')
+        .doc(roomId)
+        .collection('messages')
+        .orderBy('timestamp', 'asc')
+        .onSnapshot((snapshot) => {
+          setRoomMessages(snapshot.docs.map((doc) => doc.data()));
+        });
+    }
+  }, [roomId]);
+  console.log(roomMessages);
   return (
     <div className="chat">
-      <h2>You are in the {roomId} room</h2>
       <div className="chat__header">
         <div className="chat__headerLeft">
           <h4 className="chat__channelName">
-          <strong># general</strong>
-          <StarBorderIcon/>
+            <strong>#{roomDetails?.name}</strong>
+            <StarBorderIcon />
           </h4>
         </div>
         <div className="chat__headerRight">
-        <p><InfoIcon/>details</p></div>
-  </div>
+          <p>
+            <InfoIcon />
+            details
+          </p>
+        </div>
+      </div>
+
+      <div className="chat__messages">
+        {roomMessages.map(({user,message,timestamp, userImage}) => (
+          <Message user={user} message={message} userImage={userImage} timestamp={timestamp} />
+        ))}
+      </div>
     </div>
   );
 };
