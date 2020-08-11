@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/SashaKumeiko.github.io/slack-clone/static/css/main.a7c2144d.chunk.css",
-    "main.js": "/SashaKumeiko.github.io/slack-clone/static/js/main.529e35b4.chunk.js",
-    "main.js.map": "/SashaKumeiko.github.io/slack-clone/static/js/main.529e35b4.chunk.js.map",
+    "main.js": "/SashaKumeiko.github.io/slack-clone/static/js/main.00f52bbd.chunk.js",
+    "main.js.map": "/SashaKumeiko.github.io/slack-clone/static/js/main.00f52bbd.chunk.js.map",
     "runtime-main.js": "/SashaKumeiko.github.io/slack-clone/static/js/runtime-main.8f494bd1.js",
     "runtime-main.js.map": "/SashaKumeiko.github.io/slack-clone/static/js/runtime-main.8f494bd1.js.map",
     "static/js/2.3b5478a1.chunk.js": "/SashaKumeiko.github.io/slack-clone/static/js/2.3b5478a1.chunk.js",
     "static/js/2.3b5478a1.chunk.js.map": "/SashaKumeiko.github.io/slack-clone/static/js/2.3b5478a1.chunk.js.map",
     "index.html": "/SashaKumeiko.github.io/slack-clone/index.html",
-    "precache-manifest.72af7f311015081f4401288377f199be.js": "/SashaKumeiko.github.io/slack-clone/precache-manifest.72af7f311015081f4401288377f199be.js",
+    "precache-manifest.e48e4a8a26e5bae259d7865426d8c6e1.js": "/SashaKumeiko.github.io/slack-clone/precache-manifest.e48e4a8a26e5bae259d7865426d8c6e1.js",
     "service-worker.js": "/SashaKumeiko.github.io/slack-clone/service-worker.js",
     "static/css/main.a7c2144d.chunk.css.map": "/SashaKumeiko.github.io/slack-clone/static/css/main.a7c2144d.chunk.css.map",
     "static/js/2.3b5478a1.chunk.js.LICENSE.txt": "/SashaKumeiko.github.io/slack-clone/static/js/2.3b5478a1.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8f494bd1.js",
     "static/js/2.3b5478a1.chunk.js",
     "static/css/main.a7c2144d.chunk.css",
-    "static/js/main.529e35b4.chunk.js"
+    "static/js/main.00f52bbd.chunk.js"
   ]
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/SashaKumeiko.github.io/slack-clone/precache-manifest.72af7f311015081f4401288377f199be.js"
+  "/SashaKumeiko.github.io/slack-clone/precache-manifest.e48e4a8a26e5bae259d7865426d8c6e1.js"
 );
 
 self.addEventListener('message', (event) => {

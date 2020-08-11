@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ae5d818f357a0b77d00130b8928e788",
+    "revision": "5b10eedd68f9002638ae6b4c45b9bd67",
     "url": "/SashaKumeiko.github.io/slack-clone/index.html"
   },
   {
-    "revision": "758eeaacd33a388adf6a",
+    "revision": "82ca7c63856f01dc3f08",
     "url": "/SashaKumeiko.github.io/slack-clone/static/css/main.a7c2144d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SashaKumeiko.github.io/slack-clone/static/js/2.3b5478a1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "758eeaacd33a388adf6a",
-    "url": "/SashaKumeiko.github.io/slack-clone/static/js/main.529e35b4.chunk.js"
+    "revision": "82ca7c63856f01dc3f08",
+    "url": "/SashaKumeiko.github.io/slack-clone/static/js/main.00f52bbd.chunk.js"
   },
   {
     "revision": "80ce3b0c72ed10795915",
