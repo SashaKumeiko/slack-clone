@@ -5,13 +5,14 @@ import StarBorderIcon from '@material-ui/icons/StarBorder';
 import InfoIcon from '@material-ui/icons/Info';
 import db from '../firebase';
 import {Message} from './Message';
+import { ChatInput } from './ChatInput';
 
 export const Chat = () => {
   let {roomId} = useParams();
   roomId = roomId.substring(1);
   const [roomDetails, setRoomDetails] = useState(null);
   const [roomMessages, setRoomMessages] = useState([]);
-
+  console.log(roomDetails)
   useEffect(() => {
     if (roomId) {
       db.collection('rooms')
@@ -52,6 +53,8 @@ export const Chat = () => {
           <Message user={user} message={message} userImage={userImage} timestamp={timestamp} />
         ))}
       </div>
+          <ChatInput clannelName={roomDetails?.name} channelId={roomId}/>
+
     </div>
   );
 };

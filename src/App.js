@@ -5,12 +5,18 @@ import {BrowserRouter as  Router, Switch, Route} from 'react-router-dom';
 
 import './App.css';
 import {Chat} from './components/Chat';
+import { Login } from './components/Login';
+import { useStateValue } from './StateProvider';
 
 function App() {
+const [{user}] = useStateValue()
+console.log(user)
+
   return (
     <div className="app">
       <Router>
-        <Header />
+      
+      {!user ? <Login/> : <><Header />
         <div className="app__body">
           <Sidebar />
           <Switch>
@@ -21,7 +27,8 @@ function App() {
               <h1>Welcome</h1>
             </Route>
           </Switch>
-        </div>
+        </div></> }
+       
       </Router>
     </div>
   );

@@ -13,12 +13,13 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandLess';
 import AddIcon from '@material-ui/icons/Add';
 import db from '../firebase.js'
-
+import { useStateValue } from '../StateProvider';
 
 import './Sidebar.css';
 
 export const Sidebar = () => {
     const [channels, setChannels] = useState([])
+    const [{user}]= useStateValue()
 
     useEffect(() => {
         db.collection("rooms").onSnapshot(snapshot=>{
@@ -35,10 +36,10 @@ export const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar__header">
         <div className="sidebar__info">
-          <h2>SashaChannel</h2>
+          <h2>Slack Clone</h2>
           <h3>
             <FiberManualRecordIcon />
-            Sasha
+            {user?.displayName}
           </h3>
         </div>
         <CreateIcon/>
