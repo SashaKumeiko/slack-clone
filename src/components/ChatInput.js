@@ -22,7 +22,7 @@ export const ChatInput = ({channelName, channelId}) => {
                 }
             ) 
         }
-
+        setInput("")
     }
     console.log(channelName)
   return (
