@@ -6,7 +6,7 @@ import {useStateValue} from '../StateProvider';
 import {SET_USER} from '../reducer';
 
 export const Login = () => {
-  const [dispatch] = useStateValue();
+  const [state, dispatch] = useStateValue();
 console.log(SET_USER)
   const signIn = () => {
     auth
