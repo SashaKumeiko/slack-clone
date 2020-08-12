@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/slack-clone/static/css/main.a7c2144d.chunk.css",
+    "main.css": "/slack-clone/static/css/main.f8989092.chunk.css",
     "main.js": "/slack-clone/static/js/main.a982ca71.chunk.js",
     "main.js.map": "/slack-clone/static/js/main.a982ca71.chunk.js.map",
     "runtime-main.js": "/slack-clone/static/js/runtime-main.48a8fb26.js",
@@ -8,15 +8,15 @@
     "static/js/2.6ec6df13.chunk.js": "/slack-clone/static/js/2.6ec6df13.chunk.js",
     "static/js/2.6ec6df13.chunk.js.map": "/slack-clone/static/js/2.6ec6df13.chunk.js.map",
     "index.html": "/slack-clone/index.html",
-    "precache-manifest.e82fbc732de7a44d6e73b35b4edea965.js": "/slack-clone/precache-manifest.e82fbc732de7a44d6e73b35b4edea965.js",
+    "precache-manifest.2012b115782e1046992eead4b1da245a.js": "/slack-clone/precache-manifest.2012b115782e1046992eead4b1da245a.js",
     "service-worker.js": "/slack-clone/service-worker.js",
-    "static/css/main.a7c2144d.chunk.css.map": "/slack-clone/static/css/main.a7c2144d.chunk.css.map",
+    "static/css/main.f8989092.chunk.css.map": "/slack-clone/static/css/main.f8989092.chunk.css.map",
     "static/js/2.6ec6df13.chunk.js.LICENSE.txt": "/slack-clone/static/js/2.6ec6df13.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.48a8fb26.js",
     "static/js/2.6ec6df13.chunk.js",
-    "static/css/main.a7c2144d.chunk.css",
+    "static/css/main.f8989092.chunk.css",
     "static/js/main.a982ca71.chunk.js"
   ]
 }
